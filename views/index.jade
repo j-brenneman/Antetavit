@@ -1,5 +1,44 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    header.codrops-header
+      h1 Love Wins Everyday
+      p We are a clothing brand here to inspire and grow the Movements of our Generation
+      a(href='#' id='bt-menu-trigger-out' class='bt-menu-trigger-out')
+        span(class='bt-icon-alt icon-play')
+      nav.codrops-demos
+        a(href='/views/store') Store
+        a(href='/views/index') Home
+        a(href='/views/about') About
+    nav.bt-menu(id='bt-menu')
+      a.bt-menu-trigger(href='#')
+        span Menu
+      ul.bt-menu-top
+        li
+          a(href='#' class='bt-icon-alt icon-step-backward') Start
+        li
+          a(href='#' class='bt-icon-alt icon-backward') Fast Backwards
+        li
+          a(href='#' class='bt-icon-alt icon-pause') Pause
+        li
+          a(href='#' class='bt-icon-alt icon-forward') Fast Forward
+        li
+          a(href='#' class='bt-icon-alt icon-step-forward') Next
+      ul.bt-menu-bottom
+        li
+          //- dummy
+        li
+          //- dummy
+        li
+          //- dummy
+        li
+          //- dummy
+        li
+          //- dummy
+        li
+        
+  
+  script(src='/javascripts/classie.js')
+  script(src='/javascripts/borderMenu.js')
+    
