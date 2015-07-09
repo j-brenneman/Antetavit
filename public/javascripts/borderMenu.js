@@ -37,15 +37,15 @@
 		var overlay = document.createElement('div');
 		overlay.className = 'bt-overlay';
 
-		var video = document.createElement('iframe');
-			 		video.width = '560'
-			 				 .height = '315'
-			 				 .src = 'https://www.youtube.com/embed/nPblG6ceqOs'
-			 				 .frameborder = '0'
-			 				 .allowfullscreen;
-		overlay.content = video;
+		// var video = document.createElement('iframe');
+		// 	 		video.width = '560';
+		// 	 		video.height = '315';
+		// 	 		video.src = 'https://www.youtube.com/embed/nPblG6ceqOs';
+		// 			video.frameborder = '0';
+		// 	 		video.allowfullscreen;
+		// overlay.appendChild(video);
 		menu.appendChild( overlay );
-		
+
 
 		trigger.addEventListener( eventtype, function( ev ) {
 			ev.stopPropagation();
