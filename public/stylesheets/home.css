@@ -57,23 +57,14 @@ body  {
 }
 
 .bt-overlay {
-	position: absolute;
-	width: 100%;
-}
-
-.bt-menu-open .bt-overlay {
-	height: 100%;
-}
-
-.bt-overlay:after {
-	
-	position: absolute;
+  position: absolute;
 	left: 0;
+  height: 100%;
 	width: 100%;
 	text-align: center;
 	line-height: 5em;
 	top: 50%;
-	margin-top: -2.5em;
+	margin-top: -4.1em;
 	font-size: 5em;
 	z-index: 100;
 	color: rgba(104,115,116,0.4);
@@ -86,8 +77,9 @@ body  {
 	transition: opacity 0.3s, visbility 0s 0.3s;
 }
 
-.bt-menu-open .bt-overlay:after {
-	visibility: visible;
+.bt-menu-open .bt-overlay {
+
+  visibility: visible;
 	opacity: 1;
 	-webkit-transition: opacity 0.3s 0.2s;
 	transition: opacity 0.3s 0.2s;

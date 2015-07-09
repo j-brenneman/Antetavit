@@ -32,19 +32,16 @@
 			closeClickFn = function( ev ) {
 				resetMenu();
 				overlay.removeEventListener( eventtype, closeClickFn );
-			};
+				};
 
-		var overlay = document.createElement('div');
-		overlay.className = 'bt-overlay';
 
-		// var video = document.createElement('iframe');
-		// 	 		video.width = '560';
-		// 	 		video.height = '315';
-		// 	 		video.src = 'https://www.youtube.com/embed/nPblG6ceqOs';
-		// 			video.frameborder = '0';
-		// 	 		video.allowfullscreen;
-		// overlay.appendChild(video);
-		menu.appendChild( overlay );
+			var overlay = document.createElement('iframe');
+			overlay.className = 'bt-overlay';
+				 		overlay.src = 'https://www.youtube.com/embed/nPblG6ceqOs';
+						overlay.frameborder = '0';
+				 		overlay.allowfullscreen = true;
+						// overlay.style.visibility = 'visible';
+			menu.appendChild( overlay );
 
 
 		trigger.addEventListener( eventtype, function( ev ) {
