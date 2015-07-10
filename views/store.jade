@@ -1,9 +1,82 @@
-extends layout
-
-block content
-  header.codrops-header
-    h1 Store
-    nav.codrops-demos
-      a.current-demo(href='/views/store') Store
-      a(href='/') Home
-      a(href='/views/about') About
+doctype html
+html
+  head
+  title Store
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet' href='/stylesheets/default.css')
+  link(rel='stylesheet' href='/stylesheets/component.css')
+  link(rel='stylesheet' href='/stylesheets/demo.css')
+  script(src='/javascripts/modernizr.custom.js')
+  meta(name='author' content='Codrops')
+body
+  div.container1
+    header.clearfix
+      span.clearfix Love Wins
+      h1 Wear the Shirt 'N Stop the Hurt
+      nav.codrops-demos
+        a.current-demo(href='/views/store') Store
+        a(href='/') Home
+        a(href='/views/about') About
+    div(id='cbp-pgcontainer' class='cbp-pgcontainer')
+      ul.cbp-pggrid
+        li
+          div.cbp-pgcontainer
+            span.cbp-pgrotate Rotate item
+            div.cbp-pgitem
+              img(src='/images/front.png')
+              img(src='/images/back.png')
+            div
+             ul.cbp-pgoptions
+               li
+               li.cbp-pgoptsize
+                 span(data-size='M')
+                 div.cbp-pgopttooltip
+                   span(data-size="XL")
+                   span(data-size="L")
+                   span(data-size="M")
+                   span(data-size="S")
+               li.cbp-pgoptcolor
+                 span(data-color='c1') Blue
+                 div.cbp-pgopttooltip
+                   span(data-color="c1") Blue
+                   span(data-color="c2") Pink
+                   span(data-color="c3") Orange
+                   span(data-color="c4") Green
+               li.cbp-pgoptcart
+               li
+            div.cbp-pginfo
+              h3 Love Wins T
+              span.cbp-pgprice $25
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
