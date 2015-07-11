@@ -19,8 +19,9 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-	color: #47a3da;
+	color: #fff;
 	background: #95a5a6;
+	padding-bottom: 20%;
 }
 
 .container1 > header {

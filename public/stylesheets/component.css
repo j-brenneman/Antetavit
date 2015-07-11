@@ -12,7 +12,8 @@
 .cbp-pgcontainer {
 	position: relative;
 	width: 100%;
-	padding: 0 30px 100px 30px;
+	padding: 20px 30px 0px 30px;
+	background: rgba(49, 154, 185, 0.4);
 }
 
 .cbp-pgcontainer ul,
@@ -58,7 +59,7 @@
 }
 
 .cbp-pgcontent {
-	border: 3px solid #47a3da;
+	border: 3px solid #fff;
 	position: relative;
 }
 
@@ -70,8 +71,8 @@
 	color: transparent;
 	font-size: 0;
 	z-index: 100;
-	border-bottom: 3px solid #47a3da;
-	border-left: 3px solid #47a3da;
+	border-bottom: 3px solid #fff;
+	border-left: 3px solid #fff;
 	right: 0px;
 	top: 0px;
 	cursor: pointer;
@@ -81,7 +82,7 @@
 .cbp-pgrotate:before {
 	font-size: 18px;
 	line-height: 32px;
-	color: #47a3da;
+	color: #fff;
 }
 
 .no-touch .cbp-pgrotate:hover,
@@ -99,12 +100,14 @@
 	width: 100%;
 	position: relative;
 	padding: 2em;
+	background: rgb(131, 149, 149);
 	-webkit-perspective: 1400px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
+
 }
 
 /* The flip container */
@@ -170,7 +173,8 @@
 .cbp-pgoptions {
 	height: 60px;
 	width: 100%;
- 	border-top: 3px solid #47a3da;;
+ 	border: 3px solid #fff;
+
 }
 
 .cbp-pgoptions > li {
@@ -182,7 +186,7 @@
 	cursor: pointer;
 	color: transparent;
 	font-size: 0;
-	border-left: 3px solid #47a3da;
+	border-left: 3px solid #fff;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -196,7 +200,7 @@
 }
 
 .no-touch .cbp-pgoptions li {
-	color: #47a3da;
+	color: #fff;
 }
 
 .no-touch .cbp-pgoptions li:hover,
@@ -210,7 +214,7 @@
 	line-height: 60px;
 	text-indent: 0;
 	text-align: center;
-	color: #47a3da;
+	color: #fff;
 }
 
 .no-touch .cbp-pgoptions li:hover:before,
@@ -283,7 +287,7 @@
 	width: 100px;
 	left: 50%;
 	margin-left: -50px;
-	border: 3px solid #47a3da;
+	border: 3px solid #fff;
 	opacity: 0;
 	z-index: 1000;
 	visibility: hidden;
@@ -325,7 +329,7 @@
 
 .cbp-pgopttooltip:before {
 	border-color: transparent;
-	border-top-color: #47a3da;
+	border-top-color: #fff;
 	border-width: 14px;
 	left: 50%;
 	margin-left: -14px;
@@ -424,6 +428,14 @@
 
 .cbp-pgoptcolor span[data-color="c4"] {
 	background: #7abe93;
+}
+
+.cbp-pgoptcolor span[data-color="c5"] {
+	background: #c0c0c0;
+}
+
+.cbp-pgoptcolor span[data-color="c6"] {
+	background: #ff0000;
 }
 
 .cbp-pginfo {

@@ -3,9 +3,9 @@ html
   head
   title Store
   link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet' href='/stylesheets/demo.css')
   link(rel='stylesheet' href='/stylesheets/default.css')
   link(rel='stylesheet' href='/stylesheets/component.css')
-  link(rel='stylesheet' href='/stylesheets/demo.css')
   script(src='/javascripts/modernizr.custom.js')
   meta(name='author' content='Codrops')
 body
@@ -20,34 +20,91 @@ body
     div(id='cbp-pgcontainer' class='cbp-pgcontainer')
       ul.cbp-pggrid
         li
-          div.cbp-pgcontainer
+          div.cbp-pgcontent
             span.cbp-pgrotate Rotate item
             div.cbp-pgitem
-              img(src='/images/front.png')
-              img(src='/images/back.png')
-            div
-             ul.cbp-pgoptions
-               li
-               li.cbp-pgoptsize
-                 span(data-size='M')
-                 div.cbp-pgopttooltip
-                   span(data-size="XL")
-                   span(data-size="L")
-                   span(data-size="M")
-                   span(data-size="S")
-               li.cbp-pgoptcolor
-                 span(data-color='c1') Blue
-                 div.cbp-pgopttooltip
-                   span(data-color="c1") Blue
-                   span(data-color="c2") Pink
-                   span(data-color="c3") Orange
-                   span(data-color="c4") Green
-               li.cbp-pgoptcart
-               li
-            div.cbp-pginfo
-              h3 Love Wins T
-              span.cbp-pgprice $25
-              
+              div.cbp-pgitem-flip
+                img(src='/images/red_front.png')
+                img(src='/images/red_back.png')
+           ul.cbp-pgoptions
+             li
+               span.cbp-pgprice $25
+             li.cbp-pgoptsize
+               span(data-size='M') M
+               div.cbp-pgopttooltip
+                 span(data-size="XL") XL
+                 span(data-size="L") L
+                 span(data-size="M") M
+                 span(data-size="S") S
+             li.cbp-pgoptcolor
+               span(data-color='c6') Red
+               div.cbp-pgopttooltip
+                 span(data-color="c1") Blue
+                 span(data-color="c6") Red
+                 span(data-color="c5") Grey
+                 span(data-color="c4") Green
+             li.cbp-pgoptcart
+             li.cbp-pgoptfav
+           div.cbp-pginfo
+            h3 Sporty T        
+        li
+          div.cbp-pgcontent
+            span.cbp-pgrotate Rotate item
+            div.cbp-pgitem
+              div.cbp-pgitem-flip
+                img(src='/images/front.png')
+                img(src='/images/back.png')
+           ul.cbp-pgoptions
+             li
+               span.cbp-pgprice $29
+             li.cbp-pgoptsize
+               span(data-size='M') M
+               div.cbp-pgopttooltip
+                 span(data-size="XL") XL
+                 span(data-size="L") L
+                 span(data-size="M") M
+                 span(data-size="S") S
+             li.cbp-pgoptcolor
+               span(data-color='c5') Grey
+               div.cbp-pgopttooltip
+                 span(data-color="c1") Blue
+                 span(data-color="c6") Red
+                 span(data-color="c5") Grey
+                 span(data-color="c4") Green
+             li.cbp-pgoptcart
+             li.cbp-pgoptfav
+           div.cbp-pginfo
+            h3 That T
+        li  
+          div.cbp-pgcontent
+            span.cbp-pgrotate Rotate item
+            div.cbp-pgitem
+              div.cbp-pgitem-flip
+                img(src='/images/front_2.png')
+                img(src='/images/back_2.png')
+           ul.cbp-pgoptions
+             li
+               span.cbp-pgprice $20
+             li.cbp-pgoptsize
+               span(data-size='M') M
+               div.cbp-pgopttooltip
+                 span(data-size="XL") XL
+                 span(data-size="L") L
+                 span(data-size="M") M
+                 span(data-size="S") S
+             li.cbp-pgoptcolor
+               span(data-color='c1') Blue
+               div.cbp-pgopttooltip
+                 span(data-color="c1") Blue
+                 span(data-color="c6") Red
+                 span(data-color="c5") Grey
+                 span(data-color="c4") Green
+             li.cbp-pgoptcart
+             li.cbp-pgoptfav 
+          div.cbp-pginfo
+            h3 Comfy T
+  script(src='/javascripts/cbpShop.js')
+  script var shop = new cbpShop( document.getElementById('cbp-pgcontainer'));            
               
               
               
